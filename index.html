@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guxmaxxing | Reach Your Peak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+        }
+
+        .accent-glow {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-full px-6 py-3">
+            <div class="text-2xl font-black tracking-tighter text-blue-500">GUXMAXXING</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+                <a href="#about" class="hover:text-white transition">Method</a>
+                <a href="#features" class="hover:text-white transition">Framework</a>
+                <a href="#cta" class="hover:text-white transition">Join</a>
+            </div>
+            <a href="#cta" class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-500 hover:text-white transition duration-300">
+                GET STARTED
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient pt-20">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full filter blur-[128px]"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-[128px]"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none italic">
+                UNLEASH THE <br><span class="text-blue-500">GUX</span> WITHIN.
+            </h1>
+            <p class="max-w-xl mx-auto text-gray-400 text-lg md:text-xl mb-10">
+                The definitive framework for peak physical, mental, and social optimization. Stop settling. Start maxxing.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button class="w-full sm:w-auto px-8 py-4 bg-blue-600 rounded-lg font-bold text-lg hover:bg-blue-500 transition accent-glow">
+                    Start Your Ascension
+                </button>
+                <button class="w-full sm:w-auto px-8 py-4 glass rounded-lg font-bold text-lg hover:bg-white/10 transition">
+                    View Manifesto
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold mb-4">THE GUXMAXXING PILLARS</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="glass p-8 rounded-2xl reveal">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-500 flex items-center justify-center rounded-lg mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hyper-Aesthetics</h3>
+                    <p class="text-gray-400">Scientific facial tracking, posture realignment, and dermatological protocols for maximum visual impact.</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass p-8 rounded-2xl reveal" style="transition-delay: 0.2s;">
+                    <div class="w-12 h-12 bg-purple-600/20 text-purple-500 flex items-center justify-center rounded-lg mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Neuro-Priming</h3>
+                    <p class="text-gray-400">Cognitive enhancement through biohacking and deep-focus routines. Sharpen the mind as much as the body.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass p-8 rounded-2xl reveal" style="transition-delay: 0.4s;">
+                    <div class="w-12 h-12 bg-green-600/20 text-green-500 flex items-center justify-center rounded-lg mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Status Engineering</h3>
+                    <p class="text-gray-400">Master the art of presence. From verbal dominance to high-value social signaling, win the room before you speak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 px-6 bg-blue-600">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">THE ASCENSION BEGINS NOW.</h2>
+            <p class="text-xl mb-10 opacity-90">Join 50,000+ others who have committed to Guxmaxxing. No excuses. Just results.</p>
+            <form id="waitlistForm" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="email" placeholder="Your Email Address" class="px-6 py-4 rounded-lg text-black w-full sm:max-w-md focus:outline-none" required>
+                <button type="submit" class="bg-black text-white px-8 py-4 rounded-lg font-bold hover:bg-gray-900 transition shadow-xl">
+                    CLAIM ACCESS
+                </button>
+            </form>
+            <p id="successMsg" class="mt-4 hidden font-bold text-black bg-white/20 p-2 rounded">Welcome to the inner circle.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10 text-center">
+        <div class="mb-8 text-2xl font-black text-blue-500">GUXMAXXING</div>
+        <div class="flex justify-center space-x-6 text-gray-500 text-sm mb-8">
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Terms</a>
+            <a href="#" class="hover:text-white">Manifesto</a>
+            <a href="#" class="hover:text-white">Support</a>
+        </div>
+        <p class="text-gray-600 text-xs">© 2024 GUXMAXXING.COM. ALL RIGHTS RESERVED. ASCEND OR DECAY.</p>
+    </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        
+        // Form Handling
+        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMsg').classList.remove('hidden');
+        });
+
+        // Trigger reveal on load
+        reveal();
+    </script>
+</body>
+</html>
